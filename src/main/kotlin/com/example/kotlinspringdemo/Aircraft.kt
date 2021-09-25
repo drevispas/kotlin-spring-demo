@@ -1,31 +1,33 @@
 package com.example.kotlinspringdemo
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties
-import com.fasterxml.jackson.annotation.JsonProperty
 import java.time.Instant
 import javax.persistence.Entity
+import javax.persistence.GeneratedValue
 import javax.persistence.Id
 
 //@JsonIgnoreProperties(ignoreUnknown = true)
 @Entity
 data class Aircraft(
-    // We got an erros "Argument #0 of constructor has no property name annotation" without @JsonProperty for a property.
-    @JsonProperty("id") @Id val id: Long=0L,
-    // We got an error "Parameter specified as non-null is null" for String prop with just `:String`. Instead use `:String?`.
-    @JsonProperty("callsign") val callSign: String? = "",
-    @JsonProperty("squawk") val squawk: String = "",
-    @JsonProperty("reg") val reg: String = "",
-    @JsonProperty("flightno") val flightNo: String? = "",
-    @JsonProperty("route") val route: String = "",
-    @JsonProperty("type") val type: String = "",
-    @JsonProperty("category") val category: String = "",
-    @JsonProperty("vert_rate") val vertRate: Int=0,
-    @JsonProperty("selected_altitude") val selectedAltitude: Int=0,
-    @JsonProperty("polar_distance") val polarDistance:Double=0.0,
-    @JsonProperty("polar_bearing") val polarBearing:Double=0.0,
-    @JsonProperty("is_adsb") val isADSB:Boolean=false,
-    @JsonProperty("is_on_ground") val isOnGround:Boolean=false,
-    @JsonProperty("last_seen_time") val lastSeenTime:String?=Instant.ofEpochSecond(0).toString(),
-    @JsonProperty("pos_update_time") val posUpdateTime:String?=Instant.ofEpochSecond(0).toString(),
-    @JsonProperty("bds40_seen_time") val bds40SeenTime:String?=Instant.ofEpochSecond(0).toString()
+    // `id` values will be changed by database according to `@GeneratedValue`.
+    @Id @GeneratedValue val id: Long = 0L,
+    val callSign: String = "",
+    val squawk: String = "",
+    val reg: String = "",
+    val flightNo: String = "",
+    val route: String = "",
+    val type: String = "",
+    val category: String = "",
+    val altitude: Int = 0,
+    val heading: Int = 0,
+    val speed: Int = 0,
+    val vertRate: Int = 0,
+    // Class property names converted to Table column name automatically.
+    val selectedAltitude: Int = 0,
+    val polarDistance: Double = 0.0,
+    val polarBearing: Double = 0.0,
+    val isAdsb: Boolean = false,
+    val isOnGround: Boolean = false,
+    val lastSeenTime: String = Instant.ofEpochSecond(0).toString(),
+    val posUpdateTime: String = Instant.ofEpochSecond(0).toString(),
+    val bds40SeenTime: String = Instant.ofEpochSecond(0).toString()
 )
