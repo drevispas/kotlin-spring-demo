@@ -12,6 +12,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer
 @SpringBootApplication
 class KotlinSpringDemoApplication {
     @Bean
+    // The Spring app injects `RedisConnectionFactory` bean automatically.
     fun redisOperations(redisConnectionFactory: RedisConnectionFactory): RedisOperations<String,Aircraft> {
         val template:RedisTemplate<String,Aircraft> = RedisTemplate()
         template.setConnectionFactory(redisConnectionFactory)
