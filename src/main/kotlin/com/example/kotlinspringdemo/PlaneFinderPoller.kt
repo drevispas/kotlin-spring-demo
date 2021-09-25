@@ -12,7 +12,7 @@ import org.springframework.web.reactive.function.client.bodyToFlux
 @EnableScheduling
 @Component
 // The app inject constructor arguments by generating beans.
-class PlaneFinderPollerwe(
+class PlaneFinderPoller(
     private val redisConnectionFactory: RedisConnectionFactory,
     private val redisOperations: RedisOperations<String, Aircraft>
 ) {
