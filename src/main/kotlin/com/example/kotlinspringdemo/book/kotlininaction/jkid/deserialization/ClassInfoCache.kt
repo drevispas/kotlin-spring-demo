@@ -1,5 +1,6 @@
-package com.example.kotlinspringdemo.playground.ktinaction.jkid.deserialization
+package com.example.kotlinspringdemo.book.kotlininaction.jkid.deserialization
 
+import com.example.kotlinspringdemo.book.kotlininaction.jkid.*
 import com.example.kotlinspringdemo.playground.ktinaction.jkid.*
 import kotlin.reflect.KClass
 import kotlin.reflect.KParameter

@@ -1,4 +1,4 @@
-package com.example.kotlinspringdemo.playground.ktinaction
+package com.example.kotlinspringdemo.book.kotlininaction
 
 import java.time.LocalDate
 import java.time.Period

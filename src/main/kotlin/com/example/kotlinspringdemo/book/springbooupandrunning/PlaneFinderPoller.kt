@@ -1,4 +1,4 @@
-package com.example.kotlinspringdemo
+package com.example.kotlinspringdemo.book.springbooupandrunning
 
 import org.springframework.scheduling.annotation.EnableScheduling
 import org.springframework.scheduling.annotation.Scheduled

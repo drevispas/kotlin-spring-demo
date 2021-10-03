@@ -1,4 +1,4 @@
-package com.example.kotlinspringdemo.playground.ktinaction
+package com.example.kotlinspringdemo.book.kotlininaction
 
 fun Any.stdout(): Any = println(this)
 

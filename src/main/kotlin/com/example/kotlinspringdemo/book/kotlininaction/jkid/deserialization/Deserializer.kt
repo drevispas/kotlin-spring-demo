@@ -1,8 +1,8 @@
-package com.example.kotlinspringdemo.playground.ktinaction.jkid.deserialization
+package com.example.kotlinspringdemo.book.kotlininaction.jkid.deserialization
 
-import com.example.kotlinspringdemo.playground.ktinaction.jkid.asJavaClass
-import com.example.kotlinspringdemo.playground.ktinaction.jkid.isPrimitiveOrString
-import com.example.kotlinspringdemo.playground.ktinaction.jkid.serializerForBasicType
+import com.example.kotlinspringdemo.book.kotlininaction.jkid.asJavaClass
+import com.example.kotlinspringdemo.book.kotlininaction.jkid.isPrimitiveOrString
+import com.example.kotlinspringdemo.book.kotlininaction.jkid.serializerForBasicType
 import java.io.Reader
 import java.io.StringReader
 import java.lang.reflect.ParameterizedType

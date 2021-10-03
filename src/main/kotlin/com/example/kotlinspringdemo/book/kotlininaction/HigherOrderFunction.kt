@@ -1,4 +1,4 @@
-package com.example.kotlinspringdemo.playground.ktinaction
+package com.example.kotlinspringdemo.book.kotlininaction
 
 import java.io.BufferedReader
 import java.io.FileReader

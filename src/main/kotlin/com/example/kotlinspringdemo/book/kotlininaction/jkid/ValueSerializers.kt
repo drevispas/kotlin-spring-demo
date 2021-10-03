@@ -1,6 +1,6 @@
-package com.example.kotlinspringdemo.playground.ktinaction.jkid
+package com.example.kotlinspringdemo.book.kotlininaction.jkid
 
-import com.example.kotlinspringdemo.playground.ktinaction.jkid.deserialization.JKidException
+import com.example.kotlinspringdemo.book.kotlininaction.jkid.deserialization.JKidException
 import java.lang.reflect.Type
 
 fun serializerForBasicType(type: Type): ValueSerializer<out Any?> {

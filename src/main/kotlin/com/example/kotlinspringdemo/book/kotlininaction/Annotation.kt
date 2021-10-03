@@ -1,10 +1,9 @@
-package com.example.kotlinspringdemo.playground.ktinaction
+package com.example.kotlinspringdemo.book.kotlininaction
 
-import com.example.kotlinspringdemo.playground.ktinaction.jkid.CustomSerializer
-import com.example.kotlinspringdemo.playground.ktinaction.jkid.ValueSerializer
-import com.example.kotlinspringdemo.playground.ktinaction.jkid.deserialization.deserialize
+import com.example.kotlinspringdemo.book.kotlininaction.jkid.CustomSerializer
+import com.example.kotlinspringdemo.book.kotlininaction.jkid.ValueSerializer
+import com.example.kotlinspringdemo.book.kotlininaction.jkid.deserialization.deserialize
 import com.example.kotlinspringdemo.playground.ktinaction.jkid.serialize
-import java.util.*
 
 fun main(args: Array<String>) {
     serialize(Person("brad",99)).stdout()

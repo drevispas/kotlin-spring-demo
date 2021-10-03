@@ -1,4 +1,4 @@
-package com.example.kotlinspringdemo.playground.ktinaction.jkid
+package com.example.kotlinspringdemo.book.kotlininaction.jkid
 
 import kotlin.reflect.KClass
 
