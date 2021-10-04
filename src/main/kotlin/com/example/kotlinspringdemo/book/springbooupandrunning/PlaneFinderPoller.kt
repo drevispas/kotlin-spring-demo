@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component
 import org.springframework.web.reactive.function.client.WebClient
 
 @EnableScheduling
-@Component
+//@Component
 // The app inject constructor arguments by generating beans.
 class PlaneFinderPoller(
     private val aircraftRepository: AircraftRepository
